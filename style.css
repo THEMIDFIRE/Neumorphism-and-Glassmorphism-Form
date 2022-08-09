@@ -331,13 +331,6 @@ body {
     max-width: 76% !important;
     margin: 0 !important;
   }
-}
-
-@media screen and (max-width: 320px) {
-  .container {
-    max-width: 100% !important;
-    margin: 0 !important;
-  }
   #reg .splitter::before {
     top: 43.3% !important;
     left: 31% !important;
@@ -347,7 +340,33 @@ body {
     right: 4% !important;
   }
   #log .splitter::before, #log .splitter::after {
-    top: 48.3% !important;
+    top: 50.5% !important;
+  }
+  #log .splitter::before {
+    left: 31% !important;
+  }
+  #log .splitter::after {
+    right: 4% !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 100% !important;
+    height: 100%;
+    margin: 0 !important;
+  }
+  #reg .splitter::before, #reg .splitter::after {
+    top: 54.5% !important;
+  }
+  #reg .splitter::before {
+    left: 31% !important;
+  }
+  #reg .splitter::after {
+    right: 4% !important;
+  }
+  #log .splitter::before, #log .splitter::after {
+    top: 54.2% !important;
   }
   #log .splitter::before {
     left: 31% !important;
